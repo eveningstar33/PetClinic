@@ -1,4 +1,4 @@
 package com.dgs.springbootpetclinic.model;
 
-public class Vet {
+public class Vet extends Person {
 }
