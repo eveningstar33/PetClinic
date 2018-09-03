@@ -2,13 +2,13 @@ package com.dgs.springbootpetclinic.model;
 
 public class Speciality extends BaseEntity {
 
-    private String descirption;
+    private String description;
 
     public String getDescirption() {
-        return descirption;
+        return description;
     }
 
-    public void setDescirption(String descirption) {
-        this.descirption = descirption;
+    public void setDescirption(String description) {
+        this.description = description;
     }
 }
