@@ -5,11 +5,16 @@ import com.dgs.springbootpetclinic.model.Pet;
 import com.dgs.springbootpetclinic.services.OwnerService;
 import com.dgs.springbootpetclinic.services.PetService;
 import com.dgs.springbootpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+// We only want this class to be implemented if the default profile is active or if the map
+// profile is active. If I specify any active profile, default is not active.
+
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
